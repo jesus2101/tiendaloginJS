@@ -1,0 +1,39 @@
+[
+    {
+      "costo": 800,
+      "id": 1,
+      "articulo": "Pants Verde",
+      "imagen": "https://i.pinimg.com/474x/19/59/13/195913b016c28a359b791c61ad48a794.jpg"
+      
+    },
+    {
+      "costo": 2500,
+      "id": 2,
+      "articulo": "Vestido blanco",
+      "imagen": "https://www.modacalzadoycomplementos.com/upload_productos/2_img_1408PLANTILLA%20WEB%201000X1000%20PX570425.jpg"
+    },
+    {
+      "costo": 300,
+      "id": 3,
+      "articulo": "Pants militar",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZutD-2HD1Izm0NdGd__9ng3NDlf3eZvikQ&usqp=CAU"
+    },
+    {
+      "costo": 250,
+      "id": 4,
+      "articulo": "Playera azul",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9UXyM6LqhaSwdYXk1n2oSNLRVsexFYkmT6g&usqp=CAU"
+    },
+    {
+      "costo": 630,
+      "id": 5,
+      "articulo": "Chamarra gris",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR69RzM_INXB0gpptOM4uWjYXr1URhiFUJNEg&usqp=CAU"
+    },
+    {
+      "costo": 220,
+      "id": 6,
+      "articulo": "Playera blanca",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4jyYa5Fcxr3ZoaOad90IOLRQEAsMWdEmi9w&usqp=CAU"
+    }
+  ]
