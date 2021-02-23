@@ -1,35 +1,177 @@
-.container form{
-    
+.formulario{
+    background-color: #FFF87F;
+    max-width: 600px;
+    padding: 20px 30px;
     border-radius: 10px;
-    padding:20px 20px 40px 20px;
-    background-color: black;
+}
+
+.formulario h1{
+    text-align: center;
+    color: rgb(189, 170, 170);
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.formulario__boton{
+    background-color: #FF637D;
+    border: 1px solid transparent;
+    height: 35px;
     color: white;
-    text-align: center;
-
+    border-radius: 5px;
+    width: 100%;
 }
+.formulario__boton:hover{
 
-.container h1{
-    text-align: center;
-}
-
-.container form span{
-    
-    color:tomato;
+    background-color: #f1899b;
+    border: 1px solid transparent;
     font-weight: bold;
 
 }
 
-.container .usuario{
+.formulario__msj{
+    text-align: center;
+    margin-top:10px;
+    color: sienna;
+    font-weight:bold;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+.form_group{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form_icono{
+    position:absolute;
+    color: black;
+    top: 10px;
+    right:10px;
+
+}
+
+nav{
+    background-color: #66D7D1;
+}
+
+
+.icon-responsive, .navbar-brand{
+    color:  #869678;
+    font-weight: bold;
+}
+
+.icon-responsive:hover, .navbar-brand:hover{
+    color:  #869678;
+    font-weight: bold;
+    color: #EAF2E3;
+}
+
+.nav-link{
+    color: #869678;
+    border-bottom: 2px solid #869678;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: #EAF2E3;
+    border-bottom: 2px solid #EAF2E3;;
+    font-weight: bold;
+}
+
+
+.header{
+    background-color:  #66D7D1;
+    padding-top: 80px;
+
+}
+
+.header__titulo{
+    
+    color:  #EAF2E3;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 72px;
+
+}
+.container-fluid h1{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 60px;
+    
+}
+
+
+.container-fluid .usuario{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction:column;
 }
-.container .usuario img{
+.container-fluid .usuario img{
     width: 200px;
 }
+
+.productos{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 5px;
+    
+    justify-items: center;
+
+
+}
+
+.tarjeta{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    
+    
+}
+.tarjeta__imagen{
+    width: 100%;
+    
+    
+    
+}
+.tarjetaBody{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    background-color: #f3ee8e;
+
+}
+
+
+
+.tarjeta__boton{
+
+    background-color: #FF637D;
+    border: 1px solid transparent;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+
+}
+.tarjeta__boton:hover{
+
+    background-color: #f1899b;
+    border: 1px solid transparent;
+    font-weight: bold;
+
+}
+
+
+
+
+
 
 #salir{
     cursor: pointer;
 }
+

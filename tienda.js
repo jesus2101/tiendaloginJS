@@ -85,7 +85,7 @@ const pintarProductos=(data)=>{
 
 const detectarBotones=(data)=>{
 
-    const botones=document.querySelectorAll(".card button");
+    const botones=document.querySelectorAll(".tarjeta__boton");
 
     botones.forEach(boton=>{
 
@@ -110,6 +110,8 @@ const pintarCanasta=()=>{
     items.innerHTML="";
     const fragment=document.createDocumentFragment();
     const template=document.querySelector("#template-canasta").content;
+
+    
     Object.values(canasta).forEach(producto=>{
 
         template.querySelector('th').textContent=producto.id;
@@ -118,6 +120,8 @@ const pintarCanasta=()=>{
         template.querySelector('span').textContent=producto.costo*producto.cantidad;
         template.querySelector('.btn-info').dataset.id=producto.id;
         template.querySelector('.btn-danger').dataset.id=producto.id;
+        
+
 
         const clone=template.cloneNode(true);
         fragment.appendChild(clone);
@@ -133,11 +137,12 @@ const pintarCanasta=()=>{
 const footer=document.querySelector("#footer-canasta");
 const pintarFooter=()=>{
     footer.innerHTML="";
+    const bolsita=document.getElementById("bolsita");
     if(Object.keys(canasta).length===0){
         footer.innerHTML=`
         <th scope="row" colspan="5">Canasta vacía!</th>
         `;
-
+        bolsita.textContent=0;
         return;
     }
     
@@ -145,11 +150,13 @@ const pintarFooter=()=>{
     const fragment=document.createDocumentFragment();
     const template=document.querySelector("#template-footer").content;
     
+    
     const nCantidad =Object.values(canasta).reduce((acc,{cantidad})=>acc+cantidad,0)
     const ncosto=Object.values(canasta).reduce((acc,{cantidad,costo})=>acc+cantidad*costo,0);
 
     template.querySelectorAll('td')[0].textContent=nCantidad;
     template.querySelector('span').textContent=ncosto;
+    bolsita.textContent=nCantidad;
     
     const clone=template.cloneNode(true);
     fragment.appendChild(clone);
